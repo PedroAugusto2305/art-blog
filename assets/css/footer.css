@@ -1,0 +1,18 @@
+#footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 4rem;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+}
+
+.footer-nav a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--black);
+  margin-left: 5.7rem;
+}

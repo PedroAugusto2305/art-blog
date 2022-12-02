@@ -6,14 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/main.css" />
     <title>Art. O blog dos artistas</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header id="header">
+    <header id="header" class="max-width">
       <nav class="navbar">
         <h1 class="logo">Art.</h1>
-        <input type="text" class="search-bar" />
-        <input type="button" value="Login" class="navbar__button" />
+        <div class="search-bar">
+          <input type="text" class="search-bar__input" placeholder="Buscar" />
+          <span><img src="/assets/image/search-icon.svg" alt="" /></span>
+        </div>
+        <input type="button" value="LOGIN" class="input-button nav-button" />
       </nav>
     </header>
+    <main>
+      <section id="hero" class="max-width">
+        <article class="hero-content">
+          <h2 class="hero-title">Descubra novos artistas e suas obras</h2>
+          <p class="hero-subtitle">
+            Uma nova geração de jovens artistas surgem
+          </p>
+          <input
+            type="button"
+            value="EXPLORAR"
+            class="input-button button-down"
+          />
+          <div class="hero-info">
+            <div class="hero--data first-down">
+              <h3 class="hero-info--subtitle">+2 mil</h3>
+              <p class="hero-info--content">Artistas</p>
+            </div>
+            <div class="hero--data second-down">
+              <h3 class="hero-info--subtitle">+7 mil</h3>
+              <p class="hero-info--content">Vendas</p>
+            </div>
+            <div class="hero--data last-down">
+              <h3 class="hero-info--subtitle">+16 mil</h3>
+              <p class="hero-info--content">Avaliações</p>
+            </div>
+          </div>
+        </article>
+        <img src="/assets/image/hero-image.png" alt="" class="hero-image" />
+      </section>
+
+      <section id="collections" class="max-width">
+        <div class="collections-images">
+          <img src="/assets/image/img1.png" alt="" class="first-image" />
+          <img src="/assets/image/img2.png" alt="" class="second-image" />
+          <img src="/assets/image/img3.png" alt="" class="last-image" />
+        </div>
+        <div class="collections-content">
+          <h3 class="collections-subtitle">Confira as ultimas coleções</h3>
+          <input
+            type="button"
+            value="VER MAIS"
+            class="input-button collection-button"
+          />
+        </div>
+      </section>
+
+      <section id="artists" class="max-width">
+        <h2 class="artists-logo">Artistas</h2>
+        <div class="artists-container">
+          <div class="artists-card first-card">
+            <h3 class="artist-card__title">Sabine Lowe</h3>
+            <p class="artist-card__content">Designer e Fotógrafa</p>
+          </div>
+          <div class="artists-card second-card">
+            <h3 class="artist-card__title">Eleanor Pena</h3>
+            <p class="artist-card__content">Escritora e Designer</p>
+          </div>
+          <div class="artists-card last-card">
+            <h3 class="artist-card__title">Leslie Alexander</h3>
+            <p class="artist-card__content">Diretora de arte</p>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer" class="max-width">
+        <h1 class="logo footer-logo">Art.</h1>
+        <nav class="footer-nav">
+          <a href="#"><p>INÍCIO</p></a>
+          <a href="#"><p>BUSCAR</p></a>
+          <a href="#"><p>EXPLORAR</p></a>
+          <a href="#"><p>SOBRE NÓS</p></a>
+        </nav>
+      </footer>
+    </main>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/assets/js/scroll-reveal.js"></script>
   </body>
 </html>
